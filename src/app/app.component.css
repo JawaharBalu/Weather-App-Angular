@@ -1,0 +1,62 @@
+/* button::selection{
+    background-color: blue;
+} */
+.container{
+    /* float: inline-start;
+    margin: 0 auto;
+    width: 100%;
+    border: 15px;
+    border-width: 10px; */
+    text-align: center;
+}
+
+.body1{
+    background-color:  rgb(18, 20, 20);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    height: 100%;
+    position: absolute;
+}
+.widget{
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow:10px, azure;
+    width: 200px;
+    height: 220px;
+    background: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-width: 40px; 
+    border-color: white;  
+    
+     
+
+}
+.card{
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    border-width: 4px; 
+    border-color: white; 
+    border-radius: 5%; 
+    margin: 10px;
+    font-size: larger;
+  
+
+}
+.button::selection{
+    background-color: black;
+    color: white;
+}
+.nav-link{
+    font-size: larger;
+    
+    color: aliceblue;
+}
+.nav-link:active{
+    font-size: xx-large;
+    font-weight: bolder;
+}

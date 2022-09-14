@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+  </head>
+  
+  <body class="body1">
+    <div class=" nav-fill">
+      <div  class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+          <li *ngFor='let city of cities'  class="nav-item">
+            
+            <a  (click)="weather(city) " class="btn nav-link"
+             name="{{city}}" id = '{{city}}'>
+           {{city}}</a>
+          
+    
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    
+      <div class="card">
+        <div class="widget">
+          <div>Today </div>
+          <br>
+          <img class="img-thumbnail" src={{imaged}}>
+          <div class="">{{currentTemperature}}</div>
+          <div class="text-wrap">{{text}}</div>
+          <div class="text-wrap">Feelslike  {{currentFeelslike+'°C'}}</div>
+        </div>
+      </div>
+      <br>
+      <div class=" card " *ngFor="let days of forecastDays">
+        <div class="widget">
+          <div class="">{{days.date | date:'EEEE'}}</div>
+          <br>
+          <img class="img-thumbnail" src={{days.day.condition.icon}}>
+          <div>{{days.day.avgtemp_c+'°C'}} </div>
+          <div class="text-wrap">{{days.day.condition.text}}</div>
+          <!-- <div class="">Average Temperature{{days.day.avgtemp_c}}</div> -->
+        </div>
+      </div>
+   
+    </body>
+</html>
+ 
