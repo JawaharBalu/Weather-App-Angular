@@ -48,17 +48,17 @@ export class AppComponent implements OnInit {
 
   colorChange(city: string){
   
-    var curentCityElement = document.getElementById(city);
+    let curentCityElement = document.getElementById(city);
     curentCityElement!.style.color = 'white';
     curentCityElement!.style.fontWeight = 'bold';
     curentCityElement!.style.fontSize ='35px';
     console.log('colorchange function')
-    var notSelected = this.cities.filter((cities) => {
+    let notSelected = this.cities.filter((cities) => {
       return cities !== city
     });
 
-    for (var cities of notSelected) {
-      var notSelectedCities = document.getElementById(cities);
+    for (let cities of notSelected) {
+      let notSelectedCities = document.getElementById(cities);
       notSelectedCities!.style.fontWeight = 'light';
       notSelectedCities!.style.fontSize = 'small'
       

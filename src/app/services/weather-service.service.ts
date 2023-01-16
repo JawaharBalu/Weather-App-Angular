@@ -9,7 +9,7 @@ export class WeatherServiceService {
   constructor(private WeatherServices:HttpClient) { }
    
 
-   url:string = 'http://api.weatherapi.com/v1/forecast.json?key=de0ca2709a304351ad0211143221505&q=';
+   url:string = 'https://api.weatherapi.com/v1/forecast.json?key=de0ca2709a304351ad0211143221505&q=';
 
 
    getWeather (city:string):Observable<any>{

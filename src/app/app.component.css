@@ -16,8 +16,8 @@
     text-align: center;
     width: 100%;
     color: #000;
-    height: 100%;
-    position: absolute;
+    /* position: absolute; */
+    height: 100vh;
 }
 .widget{
     display: inline-block;
